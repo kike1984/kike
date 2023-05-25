@@ -11,15 +11,9 @@ resta=1
 #  echo $resultado
 #done
 
-#echo "$numero"
-#while [[ $numero -ge $resta ]]; do
-#  sleep 1
-#  expr "$numero" - "$resta"
-#  ((resta++))
-#done
-
+echo "$numero"
 while [[ $numero -ge $resta ]]; do
+  sleep 1
   expr "$numero" - "$resta"
   ((resta++))
-  sleep 1
 done

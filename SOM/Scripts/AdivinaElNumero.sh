@@ -5,6 +5,7 @@ numeroSecreto=10
 echo Escribe un número del 1 al 20
 read numero
 
+# Validación del imput
 if [[ -z "${numero##*[!0-9]*}" ]]; then
   echo El valor introducido no es correcto!!!
   exit
@@ -19,7 +20,6 @@ echo OOOOHHhh!!! No has acertado el número secreto!
 
 if [[ $numeroSecreto -lt "$numero" ]]; then
   echo El número secreto es menor!
-  exit
+else
+  echo El número secreto es mayor!
 fi
-
-echo El número secreto es mayor!
